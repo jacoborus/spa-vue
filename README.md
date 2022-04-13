@@ -13,11 +13,14 @@
 - Eslint
 - Prettier
 
-### Automatic components loading and auto routes for pages
+### Auto-load and auto-routes
 
-- Basic feats
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)
+Features from basic +
+
+- [vue-router](https://router.vuejs.org/)
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import): Automatic modules loading
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): Automatic components loading
+- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File system based routing
 
 ## Usage
 
