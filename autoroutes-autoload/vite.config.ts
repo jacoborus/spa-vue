@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
+import Pages from "vite-plugin-pages";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -39,6 +40,11 @@ export default defineConfig({
         filepath: "./.eslintrc-auto-import.json", // Default `./.eslintrc-auto-import.json`
         globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
+    }),
+    Pages({
+      dirs: [{ dir: "src/pages", baseRoute: "" }],
+      // do not render anything from the server
+      importMode: "async",
     }),
   ],
   test: {

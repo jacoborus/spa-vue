@@ -1,5 +1,6 @@
 <template>
-  <router-view />
+  <img alt="Vue logo" src="../assets/logo.png" />
+  <router-link to="/login">Login</router-link>
 </template>
 
 <style>
